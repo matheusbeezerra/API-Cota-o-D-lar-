@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import CotVenda from "../database/CotVenda";
+import CotVenda from "../database/CotModels";
 
 
 

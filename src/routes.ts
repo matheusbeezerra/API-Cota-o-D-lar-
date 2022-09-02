@@ -1,5 +1,5 @@
 import { Router } from "express";
-import cotacaoCompra from "./cotacao/CotCompra";
+import cotacaoCompra from "./cotacao/CotControllers";
 
 const router = Router()
 

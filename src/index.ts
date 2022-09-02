@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express'
 import mongoose from 'mongoose'
-import router from './rotas'
+import router from './routes'
 
 
 const app = express()
