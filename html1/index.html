@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src="index.ts"></script> -->
+  <title>API Banco</title>
+</head>
+<body>
+    <div>
+      <h1>BANCO CENTRAL</h1>
+     
+    </div>
+
+    <form class="modal-content animate" action="form.php" method="post">
+      <div class="imgcontainer">
+        <h2>Dólar Comercial (venda e compra) - Cotações Diárias</h2>
+        <h3>Dados e Recursos</h3>
+        
+      </div>
+
+      <div class="container">
+        
+         <ul>
+            <label for="diaa"><b>Data Inicial:</b></label>
+            <input type="date" id="bday" name="diaa" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+            <span class="validity"></span>
+         </ul>
+          <br>
+        <ul>
+            <label for="diaa"><b>Data Final:</b></label>
+            <input type="date" id="bday" name="diaa" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+            <span class="validity"></span>
+          </ul>
+          <br>
+          <ul>
+          <label for="campo"><b>Campo de Cotação:</b></label>
+          <select name="select">
+            <option value="selection"disabled  selected>Selecione</option>
+            <option value="cotacaocompra">Cotação de Compra</option>
+            <option value="cotacaovenda" >Cotação de Venda</option>
+          </select>
+        </ul>
+      </div>
+          <br>
+          <br>
+      <div class="container2">
+        <label for="nome"><b>Nome:</b></label>
+        <input type="text" placeholder="Digite aqui" name="nome" required>
+
+        <br>
+
+        <label for="telefone"><b>Telefone:</b></label>
+        <input type="tel" id="telefone" class="input-padrao" placeholder="Digite aqui" required>
+
+        <label for="cotacao"><b>Cotação:</b></label>
+        <textarea type="mensagem" id="mensagem" name="apresentacao" placeholder="Apresentando Dados..." rows="10" cols="150"></textarea>
+
+
+        <div class="button-1">
+         <div class="btn1"><button type="button" onclick="document.getElementById('id01').style.display='none'" class="executbtn">Executar</button>
+         </div>
+        </div>
+         <!-- <label>
+            <input type="checkbox" checked="checked" name="remember"> Lembrar de mim
+          </label> -->
+        
+        <div class="button2">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="downloadbtn">Donwload</button>
+        </div>
+        
+      </div>
+    </form>
+
+</body>
+</html>
